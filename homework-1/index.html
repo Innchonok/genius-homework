@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <title>Beauty Zone</title>
   </head>
   <body>
@@ -11,17 +12,23 @@
         <nav>
           <!-- logo -->
           <div>
-            <a href="#"
+            <a href="./index.html"
               ><img src="./icons/logo.svg" alt="Логотип Beauty Logo"
             /></a>
           </div>
           <ul>
-            <li><a class="link" href="#about-section">Про нас</a></li>
-            <li><a class="link" href="#advantages-section">Чому ми</a></li>
+            <li><a class="header-link" href="#about-section">Про нас</a></li>
             <li>
-              <a class="link" href="#procedures-section">Наші процедури</a>
+              <a class="header-link" href="#advantages-section">Чому ми</a>
             </li>
-            <li><a class="link" href="#contacts-section">Контакти</a></li>
+            <li>
+              <a class="header-link" href="#procedures-section"
+                >Наші процедури</a
+              >
+            </li>
+            <li>
+              <a class="header-link" href="#contacts-section">Контакти</a>
+            </li>
           </ul>
           <ul>
             <!-- дзвінок -->
@@ -43,39 +50,45 @@
     <main>
       <section class="call-section">
         <div class="container">
-          <h3>Косметологічна клініка</h3>
-          <h1><span lang="“en”">Beauty Zone</span></h1>
-          <button>Замовити дзвінок</button>
-          <div>
+          <h3 class="call-title">Косметологічна клініка</h3>
+          <h1 class="main-title"><span lang="en">Beauty Zone</span></h1>
+          <button class="call-button">Замовити дзвінок</button>
+          <div class="call-text">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </div>
         </div>
       </section>
       <section class="about-section" id="about-section">
         <div class="container">
-          <h2>
-            Перевтілюйтесь в
-            <span><span lang="“en”">beauty zone</span>!</span>
-          </h2>
           <div>
-            <p>
-              Наша косметологічна клініка пропонує вам професійні послуги з
-              догляду за шкірою обличчя та тіла.
-            </p>
-            <p>
-              B <span lang="“en”">beauty zone</span> ми гарантуємо найвищі
-              стандарти якості та приємний сервіс. Наші косметологічні процедури
-              та препарати допоможуть вам підтримувати свою красу та молодість.
-              З нами краса назавжди!
-            </p>
+            <h2 class="title-section">
+              Перевтілюйтесь в
+              <span class="title-accent" lang="en">beauty zone!</span>
+            </h2>
+            <div class="about-text">
+              <p>
+                Наша косметологічна клініка пропонує вам професійні послуги з
+                догляду за шкірою обличчя та тіла.
+              </p>
+              <p>
+                B <span class="about-accent" lang="en">beauty zone</span> ми
+                гарантуємо найвищі стандарти якості та приємний сервіс. Наші
+                косметологічні процедури та препарати допоможуть вам
+                підтримувати свою красу та молодість. З нами краса назавжди!
+              </p>
+            </div>
+          </div>
+          <div>
+            <img src="./images/about_woman1.png" alt="Обличчя До" />
+            <img src="./images/about_woman2.png" alt="Обличчя Після" />
           </div>
         </div>
       </section>
       <section class="advantages-section" id="advantages-section">
         <div class="container">
-          <h2>
+          <h2 class="title-section">
             Чому люди
-            <span>обирають нас</span>
+            <span class="title-accent">обирають нас</span>
           </h2>
           <ul>
             <li>
@@ -83,8 +96,9 @@
                 <img
                   class="advantages-section__image"
                   src="./icons/advantage1.svg"
+                  alt="Перевага 1"
                 />
-                <div>
+                <div class="advantages-text">
                   Всі наші косметологи мають вищу медичну освіту та стаж роботи
                   від 5 років
                 </div>
@@ -95,8 +109,9 @@
                 <img
                   class="advantages-section__image"
                   src="./icons/advantage2.svg"
+                  alt="Перевага 2"
                 />
-                <div>
+                <div class="advantages-text">
                   Використовуємо тільки професійне обладнання та косметику,
                   перевірену часом
                 </div>
@@ -107,9 +122,10 @@
                 <img
                   class="advantages-section__image"
                   src="./icons/advantage3.svg"
+                  alt="Перевага 3"
                 />
-                <div>
-                  Наша мета - підкреслити переваги та приховати недоліки, а не
+                <div class="advantages-text">
+                  Наша мета — підкреслити переваги та приховати недоліки, а не
                   переробити
                 </div>
               </article>
@@ -119,9 +135,9 @@
       </section>
       <section class="procedures-section" id="procedures-section">
         <div class="container">
-          <h2>
+          <h2 class="title-section">
             Наші
-            <span>процедури</span>
+            <span class="title-accent">процедури</span>
           </h2>
           <ul>
             <li><article>Маски для обличчя</article></li>
@@ -132,10 +148,22 @@
       </section>
       <section class="contacts-section" id="contacts-section">
         <div class="container">
-          <h2>
+          <h2 class="title-section">
             Як нас
-            <div>знайти</div>
+            <span class="title-accent">знайти</span>
           </h2>
+          <div>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.9323900609006!2d30.515595011801757!3d50.442359987828226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cef8b5f6338d%3A0x25c7f06ad686451c!2sTarasa%20Shevchenko%20Blvd%2C%205%2C%20Kyiv%2C%20Ukraine%2C%2002000!5e0!3m2!1sen!2sus!4v1715472029425!5m2!1sen!2sus"
+              width="605"
+              height="481"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+          <!-- <div><form action=""></form></div> -->
         </div>
       </section>
     </main>
@@ -145,54 +173,69 @@
         <nav>
           <!-- logo -->
           <div>
-            <a href="#"
+            <a href="./index.html"
               ><img src="./icons/logo.svg" alt="Логотип Beauty Logo"
             /></a>
           </div>
           <ul>
-            <li><a class="link" href="#about-section">Про нас</a></li>
-            <li><a class="link" href="#advantages-section">Чому ми</a></li>
+            <li><a class="footer-link" href="#about-section">Про нас</a></li>
             <li>
-              <a class="link" href="#procedures-section">Наші процедури</a>
+              <a class="footer-link" href="#advantages-section">Чому ми</a>
             </li>
-            <li><a class="link" href="#contacts-section">Контакти</a></li>
+            <li>
+              <a class="footer-link" href="#procedures-section"
+                >Наші процедури</a
+              >
+            </li>
+            <li>
+              <a class="footer-link" href="#contacts-section">Контакти</a>
+            </li>
           </ul>
         </nav>
+        <adress>
+          <ul>
+            <!-- телефон -->
+            <li>
+              <a class="footer-link" href="tel:+380960000007"
+                >+38 (096) 000 00 07</a
+              >
+            </li>
+            <!-- емейл -->
+            <li>
+              <a class="footer-link" href="mailto:beautyzone@gmail.com"
+                >beautyzone@gmail.com</a
+              >
+            </li>
+            <!-- адреса -->
+            <li>
+              <a
+                class="footer-link"
+                href="https://maps.app.goo.gl/uFVPGe5EJsDk6Kx48"
+                target="_blank"
+                >Україна, м. Київ, вул. Тараса Шевченка 5</a
+              >
+            </li>
+            <!-- дзвінок -->
+            <li>
+              <a href="#">дзвінок</a>
+            </li>
+            <!-- фейсбук -->
+            <li>
+              <a href="#" target="_blank">фейсбук</a>
+            </li>
+            <!-- інстаграм -->
+            <li>
+              <a href="#" target="_blank">інстаграм</a>
+            </li>
+          </ul>
+        </adress>
         <div>
-          <adress>
-            <ul>
-              <!-- телефон -->
-              <li><a href="tel:+380960000007">+38 (096) 000 00 07</a></li>
-              <!-- емейл -->
-              <li>
-                <a href="mailto:beautyzone@gmail.com">beautyzone@gmail.com</a>
-              </li>
-              <!-- адреса -->
-              <li>
-                <a
-                  href="https://maps.app.goo.gl/uFVPGe5EJsDk6Kx48"
-                  target="_blank"
-                  >Україна, м. Київ, вул. Тараса Шевченка 5</a
-                >
-              </li>
-              <!-- дзвінок -->
-              <li>
-                <a href="#">дзвінок</a>
-              </li>
-              <!-- фейсбук -->
-              <li>
-                <a href="#" target="_blank">фейсбук</a>
-              </li>
-              <!-- інстаграм -->
-              <li>
-                <a href="#" target="_blank">інстаграм</a>
-              </li>
-            </ul>
-          </adress>
-        </div>
-        <div>
-          <div><a href="#" target="_blank">Політика конфіденційності</a></div>
-          <div>© 2022 Дані захищені</div>
+          <div>
+            <a class="footer-link" href="#" target="_blank"
+              >Політика конфіденційності</a
+            >
+          </div>
+          <div>&copy; 2022 Дані захищені</div>
         </div>
       </div>
     </footer>
