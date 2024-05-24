@@ -4,6 +4,16 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
     <title>Beauty Zone</title>
   </head>
   <body>
@@ -51,7 +61,9 @@
       <section class="call-section">
         <div class="container">
           <h3 class="call-title">Косметологічна клініка</h3>
-          <h1 class="main-title"><span lang="en">Beauty Zone</span></h1>
+          <h1 class="main-title capitalize">
+            <span lang="en">beauty zone</span>
+          </h1>
           <button class="call-button">Замовити дзвінок</button>
           <div class="call-text">
             Запишись та отримай безкоштовну консультацію нашого косметолога
@@ -63,7 +75,9 @@
           <div>
             <h2 class="title-section">
               Перевтілюйтесь в
-              <span class="title-accent" lang="en">beauty zone!</span>
+              <span class="title-accent capitalize" lang="en"
+                >beauty zone!</span
+              >
             </h2>
             <div class="about-text">
               <p>
@@ -71,16 +85,19 @@
                 догляду за шкірою обличчя та тіла.
               </p>
               <p>
-                B <span class="about-accent" lang="en">beauty zone</span> ми
-                гарантуємо найвищі стандарти якості та приємний сервіс. Наші
+                B
+                <span class="about-accent capitalize" lang="en"
+                  >beauty zone</span
+                >
+                ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші
                 косметологічні процедури та препарати допоможуть вам
                 підтримувати свою красу та молодість. З нами краса назавжди!
               </p>
             </div>
           </div>
           <div>
-            <img src="./images/about_woman1.png" alt="Обличчя До" />
-            <img src="./images/about_woman2.png" alt="Обличчя Після" />
+            <img src="./images/about_woman1.jpg" alt="Обличчя До" />
+            <img src="./images/about_woman2.jpg" alt="Обличчя Після" />
           </div>
         </div>
       </section>
@@ -94,7 +111,7 @@
             <li>
               <article>
                 <img
-                  class="advantages-section__image"
+                  class="advantages-image"
                   src="./icons/advantage1.svg"
                   alt="Перевага 1"
                 />
@@ -107,7 +124,7 @@
             <li>
               <article>
                 <img
-                  class="advantages-section__image"
+                  class="advantages-image"
                   src="./icons/advantage2.svg"
                   alt="Перевага 2"
                 />
@@ -140,9 +157,13 @@
             <span class="title-accent">процедури</span>
           </h2>
           <ul>
-            <li><article>Маски для обличчя</article></li>
-            <li><article>Ін'єкції для обличчя</article></li>
-            <li><article>Очищення обличчя</article></li>
+            <li class="procedures-text">
+              <article>Маски для обличчя</article>
+            </li>
+            <li class="procedures-text">
+              <article>Ін'єкції для обличчя</article>
+            </li>
+            <li class="procedures-text"><article>Очищення обличчя</article></li>
           </ul>
         </div>
       </section>
