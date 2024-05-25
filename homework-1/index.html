@@ -6,14 +6,14 @@
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
+    <!-- <link
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
       rel="stylesheet"
     />
     <link
       href="https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap"
       rel="stylesheet"
-    />
+    /> -->
     <title>Beauty Zone</title>
   </head>
   <body>
@@ -27,17 +27,17 @@
             /></a>
           </div>
           <ul>
-            <li><a class="header-link" href="#about-section">Про нас</a></li>
+            <li><a class="header__link" href="#about-section">Про нас</a></li>
             <li>
-              <a class="header-link" href="#advantages-section">Чому ми</a>
+              <a class="header__link" href="#advantages-section">Чому ми</a>
             </li>
             <li>
-              <a class="header-link" href="#procedures-section"
+              <a class="header__link" href="#procedures-section"
                 >Наші процедури</a
               >
             </li>
             <li>
-              <a class="header-link" href="#contacts-section">Контакти</a>
+              <a class="header__link" href="#contacts-section">Контакти</a>
             </li>
           </ul>
           <ul>
@@ -60,12 +60,12 @@
     <main>
       <section class="call-section">
         <div class="container">
-          <h3 class="call-title">Косметологічна клініка</h3>
-          <h1 class="main-title capitalize">
+          <h3 class="call-section__title">Косметологічна клініка</h3>
+          <h1 class="call-section__main-title capitalize">
             <span lang="en">beauty zone</span>
           </h1>
-          <button class="call-button">Замовити дзвінок</button>
-          <div class="call-text">
+          <button class="call-section__button">Замовити дзвінок</button>
+          <div class="call-section__text">
             Запишись та отримай безкоштовну консультацію нашого косметолога
           </div>
         </div>
@@ -79,14 +79,14 @@
                 >beauty zone!</span
               >
             </h2>
-            <div class="about-text">
+            <div class="about-section__text">
               <p>
                 Наша косметологічна клініка пропонує вам професійні послуги з
                 догляду за шкірою обличчя та тіла.
               </p>
               <p>
                 B
-                <span class="about-accent capitalize" lang="en"
+                <span class="about-section__accent capitalize" lang="en"
                   >beauty zone</span
                 >
                 ми гарантуємо найвищі стандарти якості та приємний сервіс. Наші
@@ -111,11 +111,11 @@
             <li>
               <article>
                 <img
-                  class="advantages-image"
+                  class="aadvantages-section__image"
                   src="./icons/advantage1.svg"
                   alt="Перевага 1"
                 />
-                <div class="advantages-text">
+                <div class="advantages-section__text">
                   Всі наші косметологи мають вищу медичну освіту та стаж роботи
                   від 5 років
                 </div>
@@ -189,76 +189,70 @@
       </section>
     </main>
     <footer>
-      <div class="container">
-        <!-- menu -->
-        <nav>
-          <!-- logo -->
-          <div>
-            <a href="./index.html"
-              ><img src="./icons/logo.svg" alt="Логотип Beauty Logo"
-            /></a>
-          </div>
-          <ul>
-            <li><a class="footer-link" href="#about-section">Про нас</a></li>
-            <li>
-              <a class="footer-link" href="#advantages-section">Чому ми</a>
-            </li>
-            <li>
-              <a class="footer-link" href="#procedures-section"
-                >Наші процедури</a
-              >
-            </li>
-            <li>
-              <a class="footer-link" href="#contacts-section">Контакти</a>
-            </li>
-          </ul>
-        </nav>
-        <adress>
-          <ul>
-            <!-- телефон -->
-            <li>
-              <a class="footer-link" href="tel:+380960000007"
-                >+38 (096) 000 00 07</a
-              >
-            </li>
-            <!-- емейл -->
-            <li>
-              <a class="footer-link" href="mailto:beautyzone@gmail.com"
-                >beautyzone@gmail.com</a
-              >
-            </li>
-            <!-- адреса -->
-            <li>
-              <a
-                class="footer-link"
-                href="https://maps.app.goo.gl/uFVPGe5EJsDk6Kx48"
-                target="_blank"
-                >Україна, м. Київ, вул. Тараса Шевченка 5</a
-              >
-            </li>
-            <!-- дзвінок -->
-            <li>
-              <a href="#">дзвінок</a>
-            </li>
-            <!-- фейсбук -->
-            <li>
-              <a href="#" target="_blank">фейсбук</a>
-            </li>
-            <!-- інстаграм -->
-            <li>
-              <a href="#" target="_blank">інстаграм</a>
-            </li>
-          </ul>
-        </adress>
+      <!-- menu -->
+      <nav>
+        <!-- logo -->
         <div>
-          <div>
-            <a class="footer-link" href="#" target="_blank"
-              >Політика конфіденційності</a
-            >
-          </div>
-          <div>&copy; 2022 Дані захищені</div>
+          <a href="./index.html"
+            ><img src="./icons/logo.svg" alt="Логотип Beauty Logo"
+          /></a>
         </div>
-      </div>
+        <ul>
+          <li><a class="footer__link" href="#about-section">Про нас</a></li>
+          <li>
+            <a class="footer__link" href="#advantages-section">Чому ми</a>
+          </li>
+          <li>
+            <a class="footer__link" href="#procedures-section"
+              >Наші процедури</a
+            >
+          </li>
+          <li>
+            <a class="footer__link" href="#contacts-section">Контакти</a>
+          </li>
+        </ul>
+      </nav>
+      <adress>
+        <ul>
+          <!-- телефон -->
+          <li>
+            <a class="footer__link" href="tel:+380960000007"
+              >+38 (096) 000 00 07</a
+            >
+          </li>
+          <!-- емейл -->
+          <li>
+            <a class="footer__link" href="mailto:beautyzone@gmail.com"
+              >beautyzone@gmail.com</a
+            >
+          </li>
+          <!-- адреса -->
+          <li>
+            <a
+              class="footer__link"
+              href="https://maps.app.goo.gl/uFVPGe5EJsDk6Kx48"
+              target="_blank"
+              >Україна, м. Київ, вул. Тараса Шевченка 5</a
+            >
+          </li>
+          <!-- дзвінок -->
+          <li>
+            <a href="#">дзвінок</a>
+          </li>
+          <!-- фейсбук -->
+          <li>
+            <a href="#" target="_blank">фейсбук</a>
+          </li>
+          <!-- інстаграм -->
+          <li>
+            <a href="#" target="_blank">інстаграм</a>
+          </li>
+        </ul>
+        <a class="footer__link" href="#" target="_blank"
+          >Політика конфіденційності</a
+        >
+        <p class="footer__copyright">&copy; 2022 Дані захищені</p>
+      </adress>
     </footer>
   </body>
 </html>
