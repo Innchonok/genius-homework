@@ -296,7 +296,7 @@
                     minlength="4"
                     size="50"
                     placeholder="Ваше ім'я та прізвище"
-                    pattern="^([a-zA-Z'-.]+ [a-zA-Z'-.]+)$"
+                    pattern="^[А-ЯҐЄІЇ]{1}[а-яґєії'\-]{2,}\s[А-ЯҐЄІЇ]{1}[а-яґєії'\-]{2,}$"
                   />
                 </div>
                 <div class="form__field">
@@ -331,7 +331,7 @@
                     minlength="5"
                     size="30"
                     placeholder="Ваша електронна пошта"
-                    pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+                    pattern="([a-z0-9]+[.-_])*[a-z0-9]+@[a-z0-9]+(\.[a-z]{2,})+"
                   />
                 </div>
                 <button type="submit" class="form__btn">
@@ -459,7 +459,7 @@
                 minlength="4"
                 size="50"
                 placeholder="Ваше ім'я та прізвище"
-                pattern="^([a-zA-Z'-.]+ [a-zA-Z'-.]+)$"
+                pattern="^[А-ЯҐЄІЇ]{1}[а-яґєії'\-]{2,}\s[А-ЯҐЄІЇ]{1}[а-яґєії'\-]{2,}$"
               />
             </div>
             <div class="form__field">
@@ -490,7 +490,7 @@
                 required
                 size="30"
                 placeholder="Ваша електронна пошта"
-                pattern="^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$"
+                pattern="([a-z0-9]+[.-_])*[a-z0-9]+@[a-z0-9]+(\.[a-z]{2,})+"
               />
             </div>
             <button type="submit" class="form__btn">
