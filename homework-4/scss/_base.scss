@@ -16,8 +16,8 @@ body {
   margin: 0;
 
   @media screen and (max-width: $bp-tablet) {
-    background-image: url(../images/background-mini.png);
-    background-position: 0;
+    // background-image: url(../images/background-mini.png);
+    background-position: 0 850px;
   }
 }
 
