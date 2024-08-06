@@ -30,8 +30,7 @@ body {
 }
 @media screen and (max-width: 769px) {
   body {
-    background-image: url(../images/background-mini.png);
-    background-position: 0;
+    background-position: 0 850px;
   }
 }
 
