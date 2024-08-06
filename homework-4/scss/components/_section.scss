@@ -1,0 +1,36 @@
+.container {
+  max-width: 1240px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.title-section {
+  font-family: "Play", sans-serif;
+  font-weight: 700;
+  font-size: 64px;
+  text-align: center;
+  color: var(--dark-blue-color);
+  margin-bottom: 48px;
+
+  @media screen and (max-width: $bp-tablet) {
+    font-weight: 700;
+    font-size: 48px;
+    margin-bottom: 30px;
+  }
+  @media screen and (max-width: $bp-mobile) {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 32px;
+    margin-bottom: 24px;
+  }
+}
+
+/* how to hide the element */
+.visually-hidden {
+  position: absolute;
+  left: -10000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}

@@ -1,0 +1,115 @@
+/* header */
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  // padding: 20px 0;
+
+  @media screen and (min-width: $bp-tablet) {
+    background-color: rgba(255, 255, 255, 0.3);
+  }
+
+  &__container {
+    display: flex;
+    /* flex-direction: row;  - by default*/
+    align-items: center;
+    gap: 40px;
+    padding: 16px 16px 20px 20px;
+    @media screen and (min-width: $bp-tablet) {
+      padding: 32px 20px;
+    }
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+  }
+
+  &__logo-link {
+    font-family: "Play", sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 0.95;
+    text-transform: capitalize;
+    color: var(--ligth-blue-color);
+
+    @media screen and (min-width: $bp-tablet) {
+      font-size: 22px;
+    }
+  }
+
+  &__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+  }
+
+  &__menu {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      display: flex;
+      font-size: 14px;
+      gap: 40px;
+    }
+
+    @media screen and (min-width: $bp-desktop) {
+      font-size: 18px;
+      gap: 56px;
+    }
+  }
+
+  &__socials {
+    display: none;
+
+    @media screen and (min-width: $bp-tablet) {
+      max-width: 160px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+    }
+  }
+
+  &__socials a {
+    margin-left: 0;
+    display: flex;
+    align-items: center;
+  }
+
+  &__socials-icon {
+    fill: var(--dark-blue-color);
+    /* transition-property: fill;
+    transition-duration: var(--animation-duration); */
+    transition: fill var(--animation-duration);
+  }
+
+  &__socials-icon:hover {
+    fill: var(--ligth-blue-color);
+  }
+
+  &__link {
+    color: var(--dark-blue-color);
+  }
+
+  &__menu-btn {
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    fill: white;
+    background-color: transparent;
+    border: none;
+    @media screen and (min-width: $bp-tablet) {
+      display: none;
+    }
+  }
+
+  &__menu-icon {
+    overflow: visible;
+    // display: block;
+    // fill: transparent;
+    // stroke: white;
+  }
+}
