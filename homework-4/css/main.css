@@ -899,10 +899,16 @@ img {
     margin-bottom: 32px;
   } */
 }
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1280px) {
   .contacts-section {
     padding: 0 40px;
     margin-bottom: 24px;
+  }
+}
+@media screen and (max-width: 769px) {
+  .contacts-section {
+    padding: 0;
+    margin: 0;
   }
 }
 .contacts-section__container {
@@ -953,12 +959,20 @@ img {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  -webkit-box-ordinal-group: 1;
+      -ms-flex-order: 0;
+          order: 0;
+}
+@media screen and (max-width: 769px) {
+  .contacts-section__map {
+    border-radius: 0;
+  }
 }
 @media screen and (max-width: 1280px) {
   .contacts-section__map {
     min-width: 360px;
     width: 100%;
-    margin-bottom: 0;
+    margin: 0;
     padding: 0;
     -ms-flex-preferred-size: 320px;
         flex-basis: 320px;
@@ -1255,6 +1269,21 @@ img {
 
 /* modal window */
 .backdrop {
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: rgba(1, 31, 74, 0.4);
   padding: 20px;
   -webkit-transition: opacity var(--animation-duration), visibility var(--animation-duration);
@@ -1290,21 +1319,10 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
 }
-.modal__container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
+@media screen and (max-width: 769px) {
+  .modal {
+    padding: 50px;
+  }
 }
 .modal__title {
   color: white;
@@ -1314,6 +1332,12 @@ img {
   padding: 0 60px;
   min-width: 435px;
   margin: 0 auto;
+}
+@media screen and (max-width: 769px) {
+  .modal__form {
+    padding: 0;
+    min-width: 80%;
+  }
 }
 .modal__btn-icon {
   fill: transparent;
@@ -1329,6 +1353,12 @@ img {
   background-color: var(--dark-blue-color);
   cursor: pointer;
   border: none;
+}
+@media screen and (max-width: 769px) {
+  .modal__btn-close {
+    right: 20px;
+    top: 20px;
+  }
 }
 
 .mobile-menu {

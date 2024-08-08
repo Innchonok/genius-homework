@@ -1,5 +1,14 @@
 /* modal window */
 .backdrop {
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
   background-color: rgba(1, 31, 74, 0.4);
   padding: 20px;
   transition: opacity var(--animation-duration),
@@ -29,15 +38,11 @@
   flex-direction: column;
   justify-content: center;
 
+  @media screen and (max-width: $bp-tablet) {
+    padding: 50px;
+  }
+
   &__container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
   }
 
   &__title {
@@ -49,6 +54,10 @@
     padding: 0 60px;
     min-width: 435px;
     margin: 0 auto;
+    @media screen and (max-width: $bp-tablet) {
+      padding: 0;
+      min-width: 80%;
+    }
   }
 
   &__btn {
@@ -68,7 +77,10 @@
       background-color: var(--dark-blue-color);
       cursor: pointer;
       border: none;
-      // color: white;
+      @media screen and (max-width: $bp-tablet) {
+        right: 20px;
+        top: 20px;
+      }
     }
   }
 }
