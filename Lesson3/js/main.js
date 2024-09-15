@@ -74,4 +74,4 @@ const ages = girls.map((girl) => girl.age);
 let middleAge = ages.reduce((sum, item) => sum + item) / ages.length;
 console.log(`Середній вік: ${middleAge}`);
 
-console.log("-- The Endnghngh ----------");
+console.log("-- The End ----------");
