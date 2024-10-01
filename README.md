@@ -6,3 +6,9 @@
 [Homework JavaScript ДЗ 2](https://innchonok.github.io/genius-homework/Lesson3/)<br>
 [Homework JavaScript ДЗ 3](https://innchonok.github.io/genius-homework/Lesson4/)<br>
 [Homework JavaScript ДЗ 5](https://innchonok.github.io/genius-homework/Lesson5/)<br>
+
+[marathon-urok-1](https://innchonok.github.io/genius-homework/marathon-urok-1/)<br>
+[marathon-urok-2](https://innchonok.github.io/genius-homework/marathon-urok-2/)<br>
+[marathon-urok-3](https://innchonok.github.io/genius-homework/marathon-urok-3/)<br>
+[marathon-urok-4](https://innchonok.github.io/genius-homework/marathon-urok-4/)<br>
+[marathon-urok-5](https://innchonok.github.io/genius-homework/marathon-urok-5/)<br>
